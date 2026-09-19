@@ -38,45 +38,52 @@ $(document).ready(function() {
 
 
     const teamMembers = [
-        { name: "Azril Firansyah.H" },
-        { name: "Mario Christopher.I" },
-        { name: "Laili Risqi" },
-        { name: "Mas Osama" }
+        { name: "Azril Firansyah.H", image: "image/4.jpg" },
+        { name: "Mario Christopher.I", image: "image/3.jpg" },
+        { name: "Laili Risqy.A", image: "image/2.jpg" },
+        { name: "Osama Nur.M", image: "image/1.jpg" }
     ];
 
     let currentIndex = 0;
 
-    function renderSlider() {
+    function renderSlider(direction = 'next') {
         const total = teamMembers.length;
         const leftIndex = (currentIndex - 1 + total) % total;
         const centerIndex = currentIndex;
         const rightIndex = (currentIndex + 1) % total;
+        const moveClass = (direction === 'next') ? '-translate-x-8' : 'translate-x-8';
 
         // Efek Pudar Sederhana Tanpa Merusak Layout Class
-        $('.avatar-card').addClass('opacity-0');
+        $('.avatar-card').addClass('opacity-0 ' + moveClass);
 
         setTimeout(function() {
             // Update Isi Teks
-            $('#avatar-left .name-tag').text(teamMembers[leftIndex].name);
+            $('#avatar-left .name-tag ').text(teamMembers[leftIndex].name);
             $('#avatar-center .name-tag').text(teamMembers[centerIndex].name);
             $('#avatar-right .name-tag').text(teamMembers[rightIndex].name);
 
+            $('#avatar-left .avatar-img').attr('src', teamMembers[leftIndex].image);
+            $('#avatar-center .avatar-img').attr('src', teamMembers[centerIndex].image);
+            $('#avatar-right .avatar-img').attr('src', teamMembers[rightIndex].image);
+
             $('#character-title').text(`MEMBER ${centerIndex + 1} OF ${total}`);
 
+            $('.avatar-card').removeClass('-translate-x-8 translate-x-8 opacity-0');
+
             // Kembalikan Opacity Asli
-            $('#avatar-left, #avatar-right').removeClass('opacity-0').addClass('opacity-40');
-            $('#avatar-center').removeClass('opacity-0').addClass('opacity-100');
-        }, 150);
+            $('#avatar-left, #avatar-right').addClass('opacity-40');
+            $('#avatar-center').addClass('opacity-100');
+        }, 200);
     }
 
     $('#btn-next').on('click', function() {
         currentIndex = (currentIndex + 1) % teamMembers.length;
-        renderSlider();
+        renderSlider('next');
     });
 
     $('#btn-prev').on('click', function() {
         currentIndex = (currentIndex - 1 + teamMembers.length) % teamMembers.length;
-        renderSlider();
+        renderSlider('prev');
     });
 
     $('#avatar-left').on('click', function() { $('#btn-prev').click(); });
