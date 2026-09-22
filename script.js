@@ -1,20 +1,22 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Efek Klik pada Card Produk (Menampilkan Modal Detail)
-    $('.card-product').on('click', function() {
+    $('.card-product').on('click', function () {
         const category = $(this).attr('data-category') || 'Produk';
         const title = $(this).attr('data-title') || $(this).find('h3').text();
         const price = $(this).attr('data-price') || 'Hubungi Kami';
         const desc = $(this).attr('data-desc') || 'Deskripsi lengkap produk tidak tersedia.';
-        
+        const imgSrc = $(this).find('img').attr('src');
+
         // Update isi modal
         $('#modal-product-category').text(category);
         $('#modal-product-title').text(title);
         $('#modal-product-price').text(price);
         $('#modal-product-desc').text(desc);
-        
+        $('#modal-product-img').attr('src', imgSrc);
+
         // Tampilkan modal (flex) dan buat transisi masuk
         $('#product-modal').removeClass('hidden');
-        setTimeout(function() {
+        setTimeout(function () {
             $('#product-modal .relative').removeClass('scale-95 opacity-0').addClass('scale-100 opacity-100');
         }, 10);
     });
@@ -22,16 +24,16 @@ $(document).ready(function() {
     // Fungsi Menutup Modal
     function closeModal() {
         $('#product-modal .relative').removeClass('scale-100 opacity-100').addClass('scale-95 opacity-0');
-        setTimeout(function() {
+        setTimeout(function () {
             $('#product-modal').addClass('hidden');
         }, 300);
     }
 
     // Klik tombol close atau area backdrop untuk menutup modal
     $('#modal-close, #modal-backdrop').on('click', closeModal);
-    
+
     // Klik tombol pesanan di dalam modal (mengarah ke Google Form)
-    $('#modal-order-btn').on('click', function() {
+    $('#modal-order-btn').on('click', function () {
         closeModal();
         window.open('https://forms.gle/YOUR_GOOGLE_FORM_ID', '_blank');
     });
@@ -56,7 +58,7 @@ $(document).ready(function() {
         // Efek Pudar Sederhana Tanpa Merusak Layout Class
         $('.avatar-card').addClass('opacity-0 ' + moveClass);
 
-        setTimeout(function() {
+        setTimeout(function () {
             // Update Isi Teks
             $('#avatar-left .name-tag ').text(teamMembers[leftIndex].name);
             $('#avatar-center .name-tag').text(teamMembers[centerIndex].name);
@@ -76,18 +78,19 @@ $(document).ready(function() {
         }, 200);
     }
 
-    $('#btn-next').on('click', function() {
+    $('#btn-next').on('click', function () {
         currentIndex = (currentIndex + 1) % teamMembers.length;
         renderSlider('next');
     });
 
-    $('#btn-prev').on('click', function() {
+    $('#btn-prev').on('click', function () {
         currentIndex = (currentIndex - 1 + teamMembers.length) % teamMembers.length;
         renderSlider('prev');
     });
 
-    $('#avatar-left').on('click', function() { $('#btn-prev').click(); });
-    $('#avatar-right').on('click', function() { $('#btn-next').click(); });
+    $('#avatar-left').on('click', function () { $('#btn-prev').click(); });
+    $('#avatar-right').on('click', function () { $('#btn-next').click(); });
 
     renderSlider();
+
 });
