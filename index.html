@@ -13,60 +13,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[url('/image/background.jpg')]  min-h-screen  flex flex-col items-center">
+<body
+    class="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/image/background.jpg')] bg-fixed no-repeat  min-h-screen flex flex-col items-center">
 
     <header
-        class="w-full bg-[#2D5A27] py-3 px-6 shadow-md flex justify-between items-center text-sm font-semibold text-[#FF6B35] sticky top-0 z-50">
-        <div class="flex items-center gap-4">
-            <img src="image/logo_dummy.jpg" alt="Deskripsi gambar" class="w-16 h-16 rounded-full object-cover">
-            <div class="text font-bold text-2xl">ONIGO</div>
+        class="w-full bg-[#91171D] py-3 px-6 shadow-md flex justify-between items-center text-sm font-semibold text-[#FFFDF8] sticky top-0 z-50 backdrop-blur-md bg-opacity-80">
+        <div class="flex items-center  gap-2 w-1/4">
+            <img src="image/logo.jpg" alt="Deskripsi gambar" class="w-16 h-16 rounded-full object-cover">
         </div>
-
+        <!-- Navigasi -->
+        <nav class="w-full max-w-5xl my-4 px-4 ">
+            <div
+                class="bg-[#E8D0B8]/90 backdrop-blur-md py-3 px-8 rounded-lg shadow-md flex items-center justify-between">
+                <a href="#" class="nav-btn text-xl md:text-2xl text-[#352321] hover:text-black transition"
+                    aria-label="Home">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="#makanan" class="nav-btn text-xl md:text-2xl text-[#352321] hover:text-black transition"
+                    aria-label="Makanan">
+                    <i class="fa-solid fa-burger"></i>
+                </a>
+                <a href="#minuman" class="nav-btn text-xl md:text-2xl text-[#352321] hover:text-black transition"
+                    aria-label="Minuman">
+                    <i class="fa-solid fa-glass-water"></i>
+                </a>
+                <a href="#bundle" class="nav-btn text-xl md:text-2xl text-[#352321] hover:text-black transition"
+                    aria-label="Bundle">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </a>
+                <a href="#teams" class="nav-btn text-xl md:text-2xl text-[#352321] hover:text-black transition"
+                    aria-label="Our Teams">
+                    <i class="fa-solid fa-users"></i>
+                </a>
+            </div>
+        </nav>
     </header>
-    <!-- Navigasi -->
-    <nav class="w-full max-w-5xl my-4 px-4 sticky top-4 z-50">
-        <div class="bg-[#99CB95]/90 backdrop-blur-md py-3 px-8 rounded-lg shadow-md flex items-center justify-between">
-            <a href="#" class="nav-btn text-xl md:text-2xl text-[#2A9D8F] hover:text-black transition" aria-label="Home">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <a href="#makanan" class="nav-btn text-xl md:text-2xl text-[#2A9D8F] hover:text-black transition"
-                aria-label="Makanan">
-                <i class="fa-solid fa-burger"></i>
-            </a>
-            <a href="#minuman" class="nav-btn text-xl md:text-2xl text-[#2A9D8F] hover:text-black transition"
-                aria-label="Minuman">
-                <i class="fa-solid fa-glass-water"></i>
-            </a>
-            <a href="#bundle" class="nav-btn text-xl md:text-2xl text-[#2A9D8F] hover:text-black transition"
-                aria-label="Bundle">
-                <i class="fa-solid fa-boxes-stacked"></i>
-            </a>
-            <a href="#teams" class="nav-btn text-xl md:text-2xl text-[#2A9D8F] hover:text-black transition"
-                aria-label="Our Teams">
-                <i class="fa-solid fa-users"></i>
-            </a>
-        </div>
-    </nav>
-   
-    <section id="#" class="w-full max-w-5xl px-4 mt-4 mb-20"> 
-        <div class="bg-[#1F2937] rounded-2xl shadow-lg overflow-hidden flex flex-col items-center text-center">
+
+
+    <section id="#" class="w-full max-w-5xl px-4 mt-4 mb-20">
+        <div class="bg-[#430C0E] rounded-2xl shadow-lg overflow-hidden flex flex-col items-center text-center">
             <div class="w-full h-56 sm:h-72 md:h-96 relative overflow-hidden bg-gray-800">
-                <img src="image/logo_dummy.jpg" alt="Produk Unggulan ONIGO" 
-                     class="w-full h-full object-cover object-center hover:scale-105 transition duration-500">
+                <img src="image/logo_dummy.jpg" alt="Produk Unggulan ONIKU"
+                    class="w-full h-full object-cover object-center hover:scale-105 transition duration-500">
             </div>
             <div class="p-6 md:p-10 max-w-3xl flex flex-col items-center">
                 <span class="text-xs md:text-sm font-semibold tracking-wider text-[#D97706] uppercase mb-2">
                     Sensasi Baru Onigiri Kekinian
                 </span>
-                
+
                 <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
-                    Selamat Datang di <span class="text-[#D97706]">ONIGO</span>
+                    Selamat Datang di <span class="text-[#D97706]">ONIKU</span>
                 </h1>
-                
+
                 <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                    Nikmati kelezatan Onigiri khas Jepang dengan racikan bumbu autentik dan isian melimpah yang dipadukan nasi pulen gurih. Praktis, mengenyangkan, dan siap menemani setiap momen aktivitas harianmu!
+                    Nikmati kelezatan Onigiri khas Jepang dengan racikan bumbu autentik dan isian melimpah yang
+                    dipadukan nasi pulen gurih. Praktis, mengenyangkan, dan siap menemani setiap momen aktivitas
+                    harianmu!
                 </p>
-                <a href="#makanan" class="inline-flex items-center gap-2 bg-[#D97706] hover:bg-[#b45309] text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md hover:shadow-lg transform active:scale-95 text-sm md:text-base">
+                <a href="#makanan"
+                    class="inline-flex items-center gap-2 bg-[#D97706] hover:bg-[#b45309] text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md hover:shadow-lg transform active:scale-95 text-sm md:text-base">
                     <span>Jelajahi Menu</span>
                     <i class="fa-solid fa-arrow-down"></i>
                 </a>
@@ -74,98 +79,98 @@
 
         </div>
     </section>
-    
+
     <section id="makanan" class="w-full max-w-5xl px-4 mt-4 mb-24">
-        <div class="bg-[#1F2937] py-3 px-8 rounded-lg shadow-sm flex items-center  mb-4 w-fit">
-            <h2 class="text-lg font-bold text-[#D97706]">Produk Makanan</h2>
+        <div class="bg-[#352321] py-3 px-8 rounded-lg shadow-sm flex items-center  mb-4 w-fit">
+            <h2 class="text-lg font-bold text-[#E8D0B8]">Produk Makanan</h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
-                data-category="Makanan" data-title="Onigo Ayam Teriyaki" data-price="Rp -"
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+                data-category="Makanan" data-title="Oniku Ayam Teriyaki" data-price="Rp -"
                 data-desc="Onigiri Ayam Teriyaki dengan isian ayam teriyaki yang juicy, gurih, dan kaya rasa. Dibalut nasi pulen yang mengenyangkan, menjadikannya pilihan praktis dan lezat untuk menemani aktivitas Anda kapan saja.">
                 <div
                     class="w-full aspect-square bg-white rounded-md mb-3 flex items-center justify-center text-gray-400">
-                    <img src="image/product/onigo ayam teriyaki.jpg" alt="Onigo ayam teriyaki"
+                    <img src="image/product/onigo ayam teriyaki.jpg" alt="Oniku ayam teriyaki"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Onigo Ayam Teriyaki</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Oniku Ayam Teriyaki</h3>
             </div>
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
-                data-category="Makanan" data-title="Makanan Ringan A" data-price="Rp 12.000"
-                data-desc="Camilan renyah dan gurih, dibuat khusus dengan resep turun-temurun. Cocok menemani waktu santai Anda.">
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+                data-category="Makanan" data-title="Oniku Tuna Mayo" data-price="Rp 12.000"
+                data-desc="Onigiri Tuna Mayo dengan isian tuna mayo yang lezat dan gurih. Dibalut nasi pulen yang mengenyangkan, menjadikannya pilihan praktis dan lezat untuk menemani aktivitas Anda kapan saja.">
                 <div
                     class="w-full aspect-square bg-white rounded-md mb-3 flex items-center justify-center text-gray-400">
-                    <img src="image/product/onigo tuna mayo.jpg" alt="Deskripsi gambar"
+                    <img src="image/product/onigo tuna mayo.jpg" alt="Oniku tuna mayo"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Onigo Tuna Mayo</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Oniku Tuna Mayo</h3>
             </div>
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
-                data-category="Makanan" data-title="Camilan Gurih B" data-price="Rp 15.000"
-                data-desc="Olahan camilan premium dengan taburan bumbu rempah pilihan yang melimpah dan cita rasa pedas manis yang pas.">
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+                data-category="Makanan" data-title="Oniku Salted Egg" data-price="Rp 12.000"
+                data-desc="Onigiri saus telur asin yang lezat dan gurih. Dibalut nasi pulen yang mengenyangkan, menjadikannya pilihan praktis dan lezat untuk menemani aktivitas Anda kapan saja.">
                 <div
                     class="w-full aspect-square bg-white rounded-md mb-3 flex items-center justify-center text-gray-400">
                     <img src="image/product/onigo salted egg.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Onigo Salted Egg</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Oniku Salted Egg</h3>
             </div>
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
-                data-category="Makanan" data-title="Kue Tradisional C" data-price="Rp 18.000"
-                data-desc="Kue basah tradisional bertekstur lembut dengan isian manis legit. Diproduksi segar setiap harinya tanpa pengawet.">
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+                data-category="Makanan" data-title="Oniku Ayam Daun Jeruk Sambal Matah" data-price="Rp 16.000"
+                data-desc="Onigiri ayam daun jeruk sambal matah yang pedas dan gurih, dibalut nasi yang pulen cocok untuk mengisi perut Anda.">
                 <div
                     class="w-full aspect-square bg-white rounded-md mb-3 flex items-center justify-center text-gray-400">
                     <img src="image/product/onigiri ayam daun jeruk.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Onigo Ayam Daun Jeruk Sambal Matah</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Onigo Ayam Daun Jeruk Sambal Matah</h3>
             </div>
         </div>
     </section>
 
     <!-- Section produk card Minuman-->
     <section id="minuman" class="w-full max-w-5xl px-4 py-24">
-        <div class="bg-[#1F2937] py-3 px-8 rounded-lg shadow-sm flex items-center  mb-4 w-fit">
-            <h2 class="text-lg font-bold text-[#D97706]">Produk Minuman</h2>
+        <div class="bg-[#352321] py-3 px-8 rounded-lg shadow-sm flex items-center  mb-4 w-fit">
+            <h2 class="text-lg font-bold text-[#E8D0B8]">Produk Minuman</h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
-                data-category="Minuman" data-title="Minuman Segar 1" data-price="Rp 8.000"
-                data-desc="Es buah segar dengan perasan jeruk nipis dan sirup melon pilihan. Sangat pas dinikmati di siang hari yang terik.">
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+                data-category="Minuman" data-title="Mojito Leci Splash" data-price="Rp 6.000"
+                data-desc="Minuman segar dengan perpaduan rasa leci dan soda. Yang menyegarkan waktu santai Anda di siang hari yang panas.">
                 <div
                     class="w-full aspect-square bg-white rounded-md mb-3 flex items-center justify-center text-gray-400">
-                    <img src="image/product/mojito leci.jpg" alt="Deskripsi gambar"
+                    <img src="image/product/mojito_putih.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Mojito</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Mojito Leci Splash</h3>
             </div>
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
-                data-category="Minuman" data-title="Kopi Susu Dingin 2" data-price="Rp 10.000"
-                data-desc="Perpaduan biji kopi pilihan dengan susu krim gurih dan gula aren cair murni. Rasa manis legitnya bikin nagih!">
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+                data-category="Minuman" data-title="Mojito Coco Pandan Splash" data-price="Rp 6.000"
+                data-desc="Minuman segar dengan perpaduan rasa kelapa pandan dan soda. Yang menyegarkan waktu santai Anda di siang hari yang panas.">
                 <div
                     class="w-full aspect-square bg-white rounded-md mb-3 flex items-center justify-center text-gray-400">
-                    <img src="image/product/mojito coco pandan.jpg" alt="Deskripsi gambar"
+                    <img src="image/product/mojito_merah.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Mojito</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Mojito Coco Pandan Splash</h3>
             </div>
         </div>
     </section>
 
     <!-- Bundle Section -->
     <section id="bundle" class="w-full max-w-5xl px-4 py-24">
-        <div class="bg-[#1F2937] py-3 px-8 rounded-lg shadow-sm flex items-center  mb-4 w-fit">
-            <h2 class="text-lg font-bold text-[#D97706]">Produk Bundle</h2>
+        <div class="bg-[#352321] py-3 px-8 rounded-lg shadow-sm flex items-center  mb-4 w-fit">
+            <h2 class="text-lg font-bold text-[#E8D0B8]">Produk Bundle</h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
                 data-category="Bundle" data-title="Bundle Hemat A" data-price="Rp 20.000"
                 data-desc="Pilihan praktis yang menggabungkan 1 Makanan Utama dan 1 Minuman Segar. Lebih hemat dibanding beli satuan!">
                 <div
@@ -173,10 +178,10 @@
                     <img src="image/logo_dummy.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Bundle A</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Bundle A</h3>
             </div>
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
                 data-category="Bundle" data-title="Bundle Combo B" data-price="Rp 25.000"
                 data-desc="Paket lengkap mantap berisi 2 Makanan pilihan dan 1 Kopi Susu Dingin. Cocok untuk disantap berdua.">
                 <div
@@ -184,10 +189,10 @@
                     <img src="image/logo_dummy.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Bundle B</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Bundle B</h3>
             </div>
 
-            <div class="card-product bg-[#E2E8F0] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
+            <div class="card-product bg-[#F8F0E3] p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
                 data-category="Bundle" data-title="Bundle Family C" data-price="Rp 35.000"
                 data-desc="Paket porsi kenyang maksimal isi 3 Makanan Utama dan 2 Minuman Segar. Nikmat tiada tara bersama keluarga/teman!">
                 <div
@@ -195,14 +200,14 @@
                     <img src="image/logo_dummy.jpg" alt="Deskripsi gambar"
                         class="w-full h-full object-cover rounded-md">
                 </div>
-                <h3 class="font-bold text-center text-blue-900">Bundle C</h3>
+                <h3 class="font-bold text-center text-[#2A1E1C]">Bundle C</h3>
             </div>
         </div>
     </section>
 
     <section class="w-full max-w-5xl px-4 py-14">
         <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener noreferrer"
-            class="bg-[#78AF6A] hover:bg-[#89F339] hover:scale-105 active:scale-95 text-lg font-bold text-blue-900 py-3 px-8 rounded-lg shadow-md hover:shadow-lg flex items-center mb-4 w-fit mx-auto transition duration-300 transform">
+            class="bg-[#D97706] hover:bg-[#b45309] hover:scale-105 active:scale-95 text-lg font-bold text-[#FFFFFF] py-3 px-8 rounded-lg shadow-md hover:shadow-lg flex items-center mb-4 w-fit mx-auto transition duration-300 transform">
             <i class="fa-solid fa-pen-to-square mr-2"></i> Buat Pesanan
         </a>
     </section>
@@ -210,7 +215,7 @@
     <!-- Section Team -->
     <section id="teams" class="w-full max-w-5xl px-4 py-32 flex flex-col items-center overflow-hidden">
         <div class="text-center">
-            <h2 class="text-3xl font-bold text-blue-900 mb-2">Our Teams</h2>
+            <h2 class="text-3xl font-bold text-[#F5F3EF] mb-2">Our Teams</h2>
         </div>
 
         <!-- Container Utama Avatar -->
@@ -218,27 +223,30 @@
 
             <div id="avatar-left"
                 class="avatar-card w-32 md:w-40 hidden md:flex flex-col items-center transition-all duration-300 transform scale-75 opacity-40 cursor-pointer">
-                <img src="image/1.jpg" alt="Deskripsi gambar" class="avatar-img w-full aspect-square object-cover rounded-md">
-                <span class="text-xs font-semibold mt-3 text-blue-900 text-center truncate w-full name-tag">Nama
+                <img src="image/1.jpg" alt="Deskripsi gambar"
+                    class="avatar-img w-full aspect-square object-cover rounded-md">
+                <span class="text-xs font-semibold mt-3 text-[#F5F3EF] text-center truncate w-full name-tag">Nama
                     1</span>
             </div>
 
             <div id="avatar-center"
                 class="avatar-card w-44 md:w-56 flex flex-col items-center transition-all duration-300 transform scale-110 opacity-100 cursor-pointer">
-                <img src="image/2.jpg" alt="Deskripsi gambar" class="avatar-img w-full aspect-square object-cover rounded-md">
-                <span class="text-base font-bold mt-3 text-blue-900 text-center truncate w-full name-tag">Nama 2</span>
+                <img src="image/2.jpg" alt="Deskripsi gambar"
+                    class="avatar-img w-full aspect-square object-cover rounded-md">
+                <span class="text-base font-bold mt-3 text-[#F5F3EF] text-center truncate w-full name-tag">Nama 2</span>
             </div>
 
             <div id="avatar-right"
                 class="avatar-card w-32 md:w-40 hidden md:flex flex-col items-center transition-all duration-300 transform scale-75 opacity-40 cursor-pointer">
-                <img src="image/3.jpg" alt="Deskripsi gambar" class="avatar-img w-full aspect-square object-cover rounded-md">
-                <span class="text-xs font-semibold mt-3 text-blue-900 text-center truncate w-full name-tag">Nama
+                <img src="image/3.jpg" alt="Deskripsi gambar"
+                    class="avatar-img w-full aspect-square object-cover rounded-md">
+                <span class="text-xs font-semibold mt-3 text-[#F5F3EF] text-center truncate w-full name-tag">Nama
                     3</span>
             </div>
 
         </div>
 
-        <p id="character-title" class="text-sm font-bold tracking-wider text-blue-900 mb-6">MEMBER 1 OF 4</p>
+        <p id="character-title" class="text-sm font-bold tracking-wider text-[#F5F3EF] mb-6">MEMBER 1 OF 4</p>
 
         <!-- Button Navigasi avatar -->
         <div class="flex gap-6">
@@ -254,7 +262,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="w-full bg-gray-900 text-gray-300 mt-16">
+    <footer class="w-full bg-[#91171D] text-gray-300 mt-16">
         <div class="max-w-5xl mx-auto px-6 py-8">
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -262,9 +270,9 @@
                 <!-- Brand -->
                 <div>
                     <h2 class="text-xl font-bold text-white">
-                        ONIGO
+                        ONIKU
                     </h2>
-                    <p class="mt-3 text-sm leading-6 text-gray-400">
+                    <p class="mt-3 text-sm leading-6 text-[#FFFDF8]">
                         Nikmati kelezatan Onigiri khas Jepang dengan cita rasa lokal dan pilihan varian minuman segar.
                     </p>
                 </div>
@@ -275,7 +283,7 @@
                         Kontak
                     </h3>
 
-                    <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                    <ul class="mt-4 space-y-2 text-sm text-[#FFFDF8]">
                         <li>Alamat: Jember, Jawa Timur</li>
                         <li>Phone: +62 812-4671-0457 (Mario)</li>
                     </ul>
@@ -288,18 +296,18 @@
                         flex flex-col md:flex-row
                         justify-between items-center gap-4">
 
-                <p class="text-sm text-gray-500">
-                    © 2026 ONIGO. All rights reserved.
+                <p class="text-sm text-[FFFDF8]">
+                    © 2026 ONIKU. All rights reserved.
                 </p>
 
                 <div class="flex gap-5">
                     <a href="#" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white text-2xl transition" aria-label="Instagram">
+                        class="text-[#FFFDF8] hover:text-white text-2xl transition" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
                     <a href="https://github.com/azrilganteng" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white text-2xl transition" aria-label="GitHub">
+                        class="text-[#FFFDF8] hover:text-white text-2xl transition" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
@@ -323,7 +331,7 @@
 
             <!-- Product Preview -->
             <div class="w-full aspect-[4/3] h-48 md:h-64 bg-[#d6cac8] flex items-center justify-center text-gray-400">
-                 <img id="modal-product-img" src="" alt="Preview Produk" class="w-full h-full object-cover">
+                <img id="modal-product-img" src="" alt="Preview Produk" class="w-full h-full object-cover">
             </div>
 
             <div class="p-6">
